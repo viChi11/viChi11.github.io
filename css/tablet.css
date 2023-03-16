@@ -1,0 +1,183 @@
+@media screen and (max-width: 768px) {
+  /* 
+  
+  BANNER 
+  
+  */
+  header {
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .info-banner {
+    left: 26%;
+  }
+  /* Ẩn phần tên ở giữa của NAVBAR */
+  .nav-bar-name img {
+    display: none;
+  }
+  .nav-bar-name {
+    width: 25px;
+    height: auto;
+    padding: 22px 0 22px 0 !important;
+  }
+
+  /* Thay đổi màu sắc border NAVABAR theo thiết kế */
+  .container-navbar {
+    border-top: 0;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.705);
+  }
+  .container-navbar a,
+  .container-navbar div {
+    border-left: 1px solid rgba(206, 206, 206, 0.705);
+    padding: 10px 15px 10px 15px;
+    height: auto;
+  }
+  .right-border {
+    border-right: 1px solid rgba(206, 206, 206, 0.705);
+  }
+
+  /* Phần TIỂU SỬ & THÔNG TIN */
+  .container-info {
+    grid-template-rows: auto;
+  }
+  #target {
+    width: auto;
+    margin-left: 15px;
+  }
+
+  /* 
+
+BỐ CỤC GRID LAYOUT: THÔNG TIN NGHỀ NGHIỆP
+
+*/
+  #job-info {
+    margin-top: 20px;
+  }
+  .container-grid {
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 18px;
+    column-gap: 25px;
+  }
+  .kinhnghiem,
+  .hocvan,
+  .hoatdong {
+    grid-template-rows: auto 1fr;
+  }
+  /* 
+  
+  SỞ THÍCH 
+  
+  */
+  .sothich {
+    grid-template-rows: 1fr auto;
+  }
+  .sothich_content {
+    margin-left: 0;
+  }
+  .sothich h1,
+  .sothich .ic-telescope {
+    align-self: flex-end;
+  }
+  .ic-telescope {
+    margin-bottom: 20px;
+  }
+  /* 
+  
+  CHỨNG CHỈ
+  
+  */
+  .container {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none;
+  }
+  section > .container {
+    padding: 15px 20px;
+  }
+  /* Nội Dung bên trong CHỨNG CHỈ */
+  .khoind {
+    display: block;
+    margin-top: 15px;
+  }
+  .khoind img {
+    height: 130px;
+    margin-left: 20px;
+  }
+  .chungchi-content {
+    grid-template-rows: repeat(2, auto);
+  }
+  .m-- {
+    margin-top: 10px;
+  }
+  /* Chỉnh sửa thanh ngăn cách màu nâu của Chứng chỉ */
+  .nd2 {
+    position: relative;
+  }
+  .nd2::before {
+    position: absolute;
+    height: 180px;
+    left: 0;
+    top: 10px;
+  }
+  /* 
+  
+  DỰ ÁN
+  
+  */
+  .duan-inside {
+    grid-template-columns: auto;
+  }
+  /* Chỉnh kích thước vừa phải cho phần hình ảnh */
+  .duan-inside img {
+    width: 210px;
+  }
+  /* Chỉnh sửa lại phần tên của DỰ ÁN */
+  .duan-inside h3 {
+    height: auto;
+    font-size: 1.1rem;
+    padding: 10px 0 15px 10px;
+    margin-bottom: 0;
+    border: 1px solid rgb(209, 209, 209);
+  }
+  .duan-inside {
+    display: grid;
+    grid-template-columns: 210px;
+    grid-template-rows: auto auto auto 1fr;
+  }
+  /* Khung thời gian của DỰ ÁN */
+  .time {
+    display: grid;
+    grid-template-columns: 40% 10% 50%;
+    grid-template-rows: auto;
+  }
+  .icon-lamp {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .job {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .blue {
+    width: 60px;
+    margin: 10px 0 0 10px;
+  }
+  .mota {
+    height: 130px;
+  }
+  /* 
+  
+  FOOTER
+  
+  */
+  .footer li {
+    margin: 0;
+  }
+  .footer {
+    text-align: center;
+  }
+}

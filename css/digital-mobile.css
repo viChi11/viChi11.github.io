@@ -1,0 +1,14 @@
+@media screen and (max-width: 560px) {
+  /* Phần Mobile chỉnh sửa Margin và Padding */
+  .goalEl {
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+  .scopeInside {
+    padding-left: 15px;
+  }
+  .teamS,
+  .teamPara {
+    padding-left: 40px;
+  }
+}

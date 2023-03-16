@@ -1,0 +1,499 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h3,
+p {
+  margin-bottom: 0;
+}
+/* 
+
+BANNER
+
+*/
+header {
+  position: relative;
+  height: 650px;
+  background-image: linear-gradient(
+      rgba(117, 117, 117, 0.685),
+      rgba(116, 116, 116, 0.719)
+    ),
+    url("../images/banner.jpg");
+}
+.info-banner {
+  color: rgb(233, 233, 233);
+  font-size: large;
+  text-align: center;
+  position: absolute;
+  top: 12%;
+  left: 38%;
+}
+.info-banner h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+.info-banner span {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+section > .container {
+  width: 100%;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+/* 
+
+Phần NAV-BAR
+
+
+*/
+.container-navbar a,
+.container-navbar div {
+  display: inline-block;
+  border-left: 1px solid rgb(95, 95, 255);
+  text-decoration: none;
+}
+#nav-bar {
+  text-align: center;
+}
+.container-navbar a {
+  padding: 20px;
+  height: 80px;
+}
+.container-navbar div {
+  padding: 20px;
+}
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(95, 95, 255);
+  border-bottom: 1px solid rgb(95, 95, 255);
+}
+.container-navbar a i {
+  color: #199cdb;
+}
+.right-border {
+  border-right: 1px solid rgb(95, 95, 255);
+}
+/* 
+
+Phần nâng cao (NAVBAR)
+
+*/
+.nav-bar-name {
+  position: relative;
+  height: 80px;
+  width: 300px;
+}
+.nav-bar-name img {
+  border-radius: 50%;
+  position: absolute;
+  width: 135px;
+  height: 150px;
+  right: 77px;
+  bottom: -20px;
+}
+/* 
+
+TIỂU SỬ & THÔNG TIN
+
+*/
+.bg-grey {
+  background: #f7f7f7;
+}
+.container-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+#target {
+  align-self: center;
+  width: 400px;
+  height: 100%;
+  justify-self: flex-end;
+  margin-right: 15px;
+}
+#target .font-st {
+  line-height: 1.7;
+}
+.section-title-1 {
+  font-weight: lighter;
+  padding: 30px 0 30px 0;
+  margin: 0;
+}
+.submitEmailContainer {
+  background-color: #e6e6e6;
+}
+.wrong-email {
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+}
+.hidden {
+  display: none;
+}
+/* Thông tin cá nhân */
+#personal-info {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+.font-st {
+  list-style: none;
+  padding-left: 0;
+  color: rgb(82, 82, 82);
+}
+.font-st > * {
+  margin: 7px;
+}
+.font-st li span {
+  color: black;
+}
+.icon-list {
+  color: rgb(0, 174, 255);
+}
+/* 
+
+BỐ CỤC GRID LAYOUT: THÔNG TIN NGHỀ NGHIỆP
+
+*/
+.container-grid {
+  margin: 0 40px 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+  column-gap: 60px;
+}
+
+/* Tạo viền cho các grid-item trong container-grid */
+.border {
+  border: 1px solid rgba(77, 77, 77, 0.308);
+}
+
+/* 
+
+Chia Layout cho phần: Kinh nghiệm, học vấn, hoạt động 
+
+*/
+.kinhnghiem,
+.hocvan,
+.hoatdong {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr;
+}
+.kinhnghiem i,
+.hocvan i,
+.hoatdong i {
+  align-self: center;
+}
+.kinhnghiem h1,
+.hocvan h1,
+.hoatdong h1 {
+  font-size: 35px;
+  padding-left: 40px;
+  font-weight: 500;
+}
+
+/* Phần nôi dung KINH NGHIỆM */
+.noidung-kn {
+  grid-column: 1 / -1;
+}
+
+/* Phần icon HOẠT ĐỘNG */
+.icon {
+  font-size: 60px;
+}
+.mg {
+  margin-left: 5%;
+  line-height: 1.7em;
+}
+.mg > * {
+  margin-top: 15px;
+}
+
+/* 
+
+SỞ THÍCH
+
+*/
+.sothich h1,
+.ngonngu h1,
+.kynang h1 {
+  padding-left: 40px;
+}
+.sothich {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr;
+}
+/* Chỉnh sửa icon SỞ THÍCH*/
+.fa-solid {
+  color: aqua;
+  display: inline-block;
+  border: 3px solid aqua;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+  padding-top: 26px;
+}
+.chg {
+  padding-left: 10px;
+}
+.fa-gamepad {
+  padding-left: 5px;
+}
+
+/* Nội dung SỞ THÍCH */
+.sothich ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sothich ul li {
+  font-weight: bold;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+/* một phần nhỏ trong nội dung - SỞ THÍCH */
+#li-4 {
+  margin-left: 30px;
+}
+
+/* Chỉnh sửa Layout 3 Item grid phía dưới */
+.sothich_content,
+.ngonngu_content,
+.kynang_content {
+  grid-column: 1 / -1;
+  margin-left: 20px;
+}
+/* icon */
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  font-size: 60px;
+  align-self: center;
+}
+
+/* NGÔN NGỮ & KỸ NĂNG */
+.ngonngu,
+.kynang {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr;
+}
+
+/* Layout cho nội dung - KỸ NĂNG */
+.chuyenmon {
+  display: inline-block;
+}
+.nhomkn,
+.kynang_item {
+  margin-top: 15px;
+}
+
+/* STYLE CHO THANH KỸ NĂNG */
+.thanhkynang span {
+  display: inline-block;
+  height: 2px;
+  width: 60px;
+  margin-right: 10px;
+}
+.gray-class {
+  background: rgb(161, 161, 161);
+}
+.blue-class {
+  background: #199cdb;
+}
+
+/* 
+
+
+CHỨNG CHỈ
+
+
+
+*/
+/* CHỨNG CHỈ - tiêu đề */
+#certificate .section-title {
+  font-weight: 200;
+}
+
+/* Nội dung - CHỨNG CHỈ */
+.chungchi-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
+
+/* Hình Ảnh - CHỨNG CHỈ */
+.khoind img {
+  height: 100px;
+}
+
+/* Phần mô tả của Nội dung - CHỨNG CHỈ */
+.khoind {
+  display: flex;
+  align-items: center;
+}
+.m-- {
+  margin: 0 0 0 20px;
+}
+.m-- > * {
+  margin-bottom: 10px;
+}
+.m-- h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.m-- p {
+  color: rgba(66, 66, 66, 0.678);
+}
+/* Tạo đường viền cho Nội dung - CHỨNG CHỈ */
+.nd1,
+.nd2 {
+  border-bottom: 1px solid #d6c08d;
+}
+.nd2::before {
+  position: relative;
+  content: "";
+  width: 2px;
+  height: 100px;
+  background: #d6c08d;
+  right: 15px;
+}
+/* 
+
+DỰ ÁN
+
+
+*/
+/* DỰ ÁN - Tiêu đề */
+.duan-title {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 15px 0 30px 5px;
+}
+/* Phần Hình Ảnh của DỰ ÁN */
+.duan-inside img {
+  width: 330px;
+}
+/*  Phần Nội dung của DỰ ÁN : Chia làm 3 cột Flex */
+.duan-content {
+  display: flex;
+  justify-content: space-between;
+}
+/* Căn chiều cao mỗi cột Flex */
+.duan-content > * {
+  height: 600px;
+}
+/* Chia grid cho từng cột Nội Dung */
+.duan-inside {
+  display: grid;
+  grid-template-columns: 330px;
+  grid-template-rows: auto auto 30px 1fr;
+}
+/* Chỉnh sửa màu sắc cho nội dung */
+.duan-inside > * {
+  color: rgba(97, 97, 97, 0.856);
+}
+/* Phần nội dung trong từng cột */
+.duan-inside h3 {
+  height: auto;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 0;
+  border: 1px solid rgb(209, 209, 209);
+}
+.duan-inside h3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+/* Phần bên dưới tiêu đề mỗi cột */
+.time > * {
+  display: inline-block;
+  padding-top: 6px;
+}
+.time {
+  display: flex;
+  border-left: 1px solid rgb(209, 209, 209);
+  border-right: 1px solid rgb(209, 209, 209);
+  justify-content: space-around;
+}
+/* Chỉnh màu cho phần Thời Gian: năm */
+.blue {
+  font-weight: 700;
+  font-size: smaller;
+  text-align: center;
+  color: white;
+  width: 45px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #199cdb;
+  margin-bottom: 0;
+}
+/* Phần bên dưới Thời Gian (A1) */
+.web div {
+  display: flex;
+  padding: 15px 0 20px 0;
+  border: 1px solid rgb(209, 209, 209);
+  border-bottom: none;
+}
+/* Chỉnh sửa đường viền của A1 */
+.web div:last-child {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+/* Căn chỉnh margin padding width */
+.web div p:first-child {
+  width: 30%;
+  margin-left: 10px;
+}
+.web div p:last-child {
+  width: 70%;
+}
+.mota {
+  height: 80px;
+}
+
+/* 
+
+FOOTER
+
+*/
+/* màu nền */
+#footer {
+  background-color: rgb(212, 212, 212);
+}
+/* Layout cho nằm cùng hàng */
+.footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+/* Chỉnh sửa Icon FOOTER */
+.icon-f {
+  color: #199cdb;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.footer a {
+  text-decoration: none;
+  color: #666666;
+}
+/* Button View More/Less */
+.btn-warning {
+  margin: 15px;
+}
+.control-view {
+  grid-column: 1/2;
+}

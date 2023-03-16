@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(
+    0.25turn,
+    rgba(42, 42, 248, 0.795),
+    10%,
+    rgba(41, 41, 253, 0.726)
+  );
+}
+.container-all {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 15px;
+  row-gap: 15px;
+  column-gap: 10px;
+}
+/* Màu sắc background */
+.goals,
+.scopes,
+.team,
+.primary,
+.timeLine {
+  background-color: aliceblue;
+}
+/* TIÊU ĐỀ THÀNH PHẦN CHÍNH */
+.goalsTitle,
+.scopesTitle,
+.teamTitle,
+.primaryTitle,
+.timeLineTitle {
+  color: rgba(41, 41, 253, 0.726);
+  font-weight: 700;
+  font-size: 22px;
+  margin: 10px 10px 0 10px;
+  border-bottom: 1px solid rgba(133, 33, 33, 0.411);
+}
+
+/* GOALS */
+.goals {
+  grid-column: 1/6;
+  grid-row: 1/4;
+}
+.goal-inside {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px 15px 40px 0;
+}
+.goalEl {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-row: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+/* Icon Flag */
+.fa-flag-checkered {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+}
+/* Small title */
+.goalSmallTitle {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-size: 18px;
+  font-weight: 500;
+}
+.para {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* SCOPES */
+.scopes {
+  grid-column: 1/6;
+  grid-row: 4/6;
+}
+.scopeInside {
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  margin: 10px;
+  padding: 0 15px 40px 0;
+}
+.SsmallT {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.insideS {
+  padding-left: 15px;
+}
+.insideS div {
+  margin-bottom: 12px;
+}
+
+/* TEAM */
+.team {
+  grid-column: 6/9;
+  grid-row: 1/4;
+}
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-top: 15px;
+}
+.member {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(2, auto);
+}
+.fa-user-large {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+.teamS {
+  font-weight: 600;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.teamS {
+  font-size: 15px;
+}
+
+/* PRIMARY */
+.primary {
+  grid-column: 6/9;
+  grid-row: 4/6;
+}
+.primaryInside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+.primaryContent {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  margin-bottom: 10px;
+}
+.fa-circle-user {
+  justify-self: center;
+  align-self: center;
+}
+
+/* TIMELINE */
+.timeLine {
+  grid-column: 9/-1;
+  grid-row: 1/-1;
+}
+.timeLineInside {
+  margin: 15px 0 35px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+.timeStep {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(2, auto);
+}
+.number {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  border: 1px solid rgba(146, 38, 38, 0.945);
+  background-color: rgba(116, 19, 116, 0.671);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+}
+.PjTime {
+  font-weight: 600;
+}
+.number p {
+  color: aliceblue;
+  font-weight: 600;
+  text-align: center;
+}
+.text {
+  border-bottom: 1px dashed rgba(45, 250, 45, 0.842);
+  padding-bottom: 15px;
+}
